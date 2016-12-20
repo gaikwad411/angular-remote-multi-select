@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html data-ng-app="demo">
+
+  <head>
+    <link data-require="bootstrap@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script data-require="bootstrap@3.3.6" data-semver="3.3.6" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script data-require="jquery@1.9.1" data-semver="1.9.1" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script data-require="angularjs@1.5.8" data-semver="1.5.8" src="https://opensource.keycdn.com/angularjs/1.5.8/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body data-ng-controller="demoCtrl">
+    <h1 data-ng-bind="message"></h1>
+    <h3>{{ country|json}}</h3>
+    <input type="text" id="my-multi-select-input" name="my-multiselect-input" my-multi-select="" ng-model="country" />
+  </body>
+
+</html>
